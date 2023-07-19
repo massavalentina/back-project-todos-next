@@ -6,9 +6,9 @@ from fastapi import Depends
 
 SQLALCHEMY_DATABASE_URL = 'postgresql://postgres:postgres@localhost:5432/todos'
 
-engine = create_engine(SQLALCHEMY_DATABASE_URL); # crear manipular tablas - motor
+engine = create_engine(SQLALCHEMY_DATABASE_URL); 
 
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine); # obj de coneccion 
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine); 
 
 Base = declarative_base();
 
