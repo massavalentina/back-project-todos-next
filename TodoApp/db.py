@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker, Session
 from sqlalchemy.ext.declarative import declarative_base
 from fastapi import Depends
 
-SQLALCHEMY_DATABASE_URL = 'postgresql://postgres:valentina@localhost:5432/todos'
+SQLALCHEMY_DATABASE_URL = 'postgresql://postgres:postgres@localhost:5432/todos'
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL); # crear manipular tablas - motor
 
